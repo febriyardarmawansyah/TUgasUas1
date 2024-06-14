@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post and Todos App</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar">
+      <ul>
+        <li><button id="postButton" class="active">Post</button></li>
+        <li><button id="todosButton">Todos</button></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="container">
+    <div id="postContent" class="content hidden">
+      <h2>Post</h2>
+      <select id="userSelect"></select>
+      <ul id="postList"></ul>
+    </div>
+    <div id="todosContent" class="content hidden">
+      <h2>Todos</h2>
+      <select id="userTodosSelect"></select>
+      <ul id="todosList"></ul>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
